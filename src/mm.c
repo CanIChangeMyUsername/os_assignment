@@ -89,6 +89,7 @@ int vmap_page_range(struct pcb_t *caller,           // process call
   //struct framephy_struct *fpit;
   int pgit = 0;
   int pgn = PAGING_PGN(addr);
+  struct framephy_struct *fpit = frames;
 
   /* TODO: update the rg_end and rg_start of ret_rg 
   //ret_rg->rg_end =  ....
